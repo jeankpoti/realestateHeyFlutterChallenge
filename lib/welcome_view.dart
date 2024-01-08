@@ -19,7 +19,7 @@ class WelcomeView extends StatelessWidget {
         elevation: 0,
         title: Text(
           'LOGO',
-          style: AppTextStyles.title,
+          style: AppTextStyles.subtitle,
         ),
       ),
       body: SingleChildScrollView(

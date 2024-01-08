@@ -33,6 +33,8 @@ class _SearchresultItemViewState extends ConsumerState<SearchresultItemView> {
   Widget build(BuildContext context) {
     final itemList = ref.watch(itemControllerProvider);
 
+    print('itemList: $itemList');
+
     return Scaffold(
       backgroundColor: AppColors.primary,
       appBar: AppBar(

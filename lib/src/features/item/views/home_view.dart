@@ -53,7 +53,7 @@ class _HomeViewState extends ConsumerState<HomeView> {
           children: [
             Text(
               'LOGO',
-              style: AppTextStyles.title,
+              style: AppTextStyles.subtitle,
             ),
             const Icon(Icons.notifications_outlined)
           ],
@@ -153,9 +153,9 @@ class _HomeViewState extends ConsumerState<HomeView> {
                       ),
                       ispriceInvalid
                           ? Padding(
-                              padding: EdgeInsets.only(top: 8.h),
+                              padding: EdgeInsets.only(left: 8.w, top: 8.h),
                               child: Text(
-                                  'Minimum price  must be less tha 8 digits',
+                                  'Minimum price  must be less than 8 digits',
                                   style: AppTextStyles.body.copyWith(
                                     color: Colors.red,
                                   )),
