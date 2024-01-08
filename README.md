@@ -4,7 +4,7 @@ A new Flutter project.
 
 ## Getting Started
 
-#I used an API from RapidApi website. Click on the link below to acces the API.
+# I used an API from RapidApi website. Click on the link below to acces the API.
 -   [Link: ](https://rapidapi.com/apidojo/api/bayut/)
 
 This project is a starting point for a Flutter application.
