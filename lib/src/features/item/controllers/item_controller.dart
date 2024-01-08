@@ -22,13 +22,13 @@ class ItemController extends StateNotifier<List<Property>> {
     }
   }
 
-  Future<void> getPropertyDetail(String externalId) async {
-    try {
-      final data = await apiService.getPropertyDetails(externalId);
+  // Future<void> getPropertyDetail(String externalId) async {
+  //   try {
+  //     final data = await apiService.getPropertyDetails(externalId);
 
-      state = data;
-    } on Exception catch (err) {
-      print('Error getting items $err');
-    }
-  }
+  //     state = data;
+  //   } on Exception catch (err) {
+  //     print('Error getting items $err');
+  //   }
+  // }
 }

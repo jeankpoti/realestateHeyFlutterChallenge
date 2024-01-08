@@ -3,25 +3,23 @@ import 'package:realstate/src/features/item/models/property.dart';
 
 import '../../../service/api_service.dart';
 
-// final itemControllerProvider =
-//     StateNotifierProvider.autoDispose<ItemDetailsController, Property>((ref) {
-//   return ItemDetailsController();
-// });
+final itemDetailsControllerProvider =
+    StateNotifierProvider<ItemDetailsController, List<Property>>((ref) {
+  return ItemDetailsController();
+});
 
-// class ItemDetailsController extends StateNotifier<Property>{
-//   ItemDetailsController() : super(Property);
+class ItemDetailsController extends StateNotifier<List<Property>> {
+  ItemDetailsController() : super([]);
 
-//   ApiService apiService = ApiService();
+  ApiService apiService = ApiService();
 
+  Future<void> getPropertyDetails(String externalId) async {
+    try {
+      final data = await apiService.getPropertyDetails(externalId);
 
-
-//   Future<void> getPropertyDetail(String externalId) async {
-//     try {
-//       final data = await apiService.getPropertyDetails(externalId);
-
-//       state = data;
-//     } on Exception catch (err) {
-//       print('Error getting items $err');
-//     }
-//   }
-// }
+      state = data;
+    } on Exception catch (err) {
+      print('Error getting items $err');
+    }
+  }
+}

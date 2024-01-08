@@ -7,6 +7,7 @@ import 'package:realstate/src/constants/app_text.styles.dart';
 import '../../../common_widgets/image_container.dart';
 import '../../../constants/app_colors.dart';
 import '../controllers/item_controller.dart';
+import '../controllers/item_details_controller.dart';
 
 class ItemDetailsView extends ConsumerStatefulWidget {
   final String externalId, mainImageUrl;
@@ -34,8 +35,8 @@ class _ItemDetailsViewState extends ConsumerState<ItemDetailsView> {
     _mainImageUrl = widget.mainImageUrl;
 
     ref
-        .read(itemControllerProvider.notifier)
-        .getPropertyDetail(widget.externalId);
+        .read(itemDetailsControllerProvider.notifier)
+        .getPropertyDetails(widget.externalId);
 
     super.initState();
   }
@@ -43,6 +44,7 @@ class _ItemDetailsViewState extends ConsumerState<ItemDetailsView> {
   @override
   Widget build(BuildContext context) {
     final itemList = ref.watch(itemControllerProvider);
+
     String name = itemList[0].title ?? '';
     String description = itemList[0].description ?? '';
     String mainImageUrl = itemList[0].coverPhoto?.url ?? '';
