@@ -44,3 +44,4 @@ app.*.map.json
 
 
 /lib/src/constants/api_key.dart
+/andoid/app/src/main/res/values/keys.xml
