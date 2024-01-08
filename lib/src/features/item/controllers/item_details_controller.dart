@@ -4,7 +4,8 @@ import 'package:realstate/src/features/item/models/property.dart';
 import '../../../service/api_service.dart';
 
 final itemDetailsControllerProvider =
-    StateNotifierProvider<ItemDetailsController, List<Property>>((ref) {
+    StateNotifierProvider.autoDispose<ItemDetailsController, List<Property>>(
+        (ref) {
   return ItemDetailsController();
 });
 
