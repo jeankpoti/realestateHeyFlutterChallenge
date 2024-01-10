@@ -22,4 +22,4 @@ A new Flutter project.
 
 ![Screenshot_20240109-202656](https://github.com/jeankpoti/realestateHeyFlutterChallenge/assets/23018022/95147684-6070-465b-9fa9-c4a459e41888)
 
-- [Inspiration: ](https://dribbble.com/shots/19857964-Real-Estate-App-Exploration)
+- [Inspiration](https://dribbble.com/shots/19857964-Real-Estate-App-Exploration)
