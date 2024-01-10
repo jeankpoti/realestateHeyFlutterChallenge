@@ -52,8 +52,8 @@ class _PopularItemViewState extends ConsumerState<PopularItemView> {
                       PageRouteBuilder(
                         pageBuilder: (context, animation, secondaryAnimation) =>
                             ItemDetailsView(
-                          mainImageUrl: itemList[0].coverPhoto?.url ?? '',
-                          externalId: itemList[0].externalID ?? '',
+                          mainImageUrl: itemList[index].coverPhoto?.url ?? '',
+                          externalId: itemList[index].externalID ?? '',
                           rating: 4.5,
                         ),
                         transitionsBuilder:
