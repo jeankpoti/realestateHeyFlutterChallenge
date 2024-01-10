@@ -4,11 +4,11 @@ A new Flutter project.
 
 ## Getting Started
 
-# I used an API from RapidApi website. Click on the link below to acces the API.
+# I made this project through heyFlutter challenge using flutter and Riverpod state management
+
+# I also used an API from RapidApi website. Click on the link below to acces the API.
 
 - [Click on me: ](https://rapidapi.com/apidojo/api/bayut/)
-
-I made this project through heyFlutter challenge
 
 ![Screenshot_20240109-202631](https://github.com/jeankpoti/realestateHeyFlutterChallenge/assets/23018022/321ed85e-27c7-42fd-a9a7-86532b1a52e2)
 
